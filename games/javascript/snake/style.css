@@ -134,20 +134,21 @@ button:hover {
     }
 }
 
+Then use this instead so it matches the cleaner centered style from the other pages:
+
+```css id="zq8s8o"
 .back-link {
-    display: inline-block;
+    display: block;
     margin-top: 18px;
+    text-align: center;
     color: #6cff9c;
     text-decoration: none;
     font-weight: bold;
-    border: 2px solid #37b865;
-    padding: 10px 18px;
-    border-radius: 10px;
     transition: 0.3s;
 }
 
 .back-link:hover {
-    background: #37b865;
     color: white;
-    transform: translateY(-2px);
+    text-decoration: underline;
 }
+```
