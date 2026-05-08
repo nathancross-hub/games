@@ -134,9 +134,6 @@ button:hover {
     }
 }
 
-Then use this instead so it matches the cleaner centered style from the other pages:
-
-```css id="zq8s8o"
 .back-link {
     display: block;
     margin-top: 18px;
@@ -151,4 +148,3 @@ Then use this instead so it matches the cleaner centered style from the other pa
     color: white;
     text-decoration: underline;
 }
-```
