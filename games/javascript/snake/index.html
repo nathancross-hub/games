@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Snake game built with HTML, CSS, and JavaScript.">
+    <meta name="author" content="Nathan Cross">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-page">
+        <section class="game-card">
+            <div class="top">
+                <div>
+                    <p class="label">JavaScript Game</p>
+                    <h1>Snake</h1>
+                </div>
+
+                <div class="score-box">
+                    <p>Score</p>
+                    <h2 id="score">0</h2>
+                </div>
+            </div>
+
+            <canvas id="game" width="400" height="400"></canvas>
+
+            <div class="controls">
+                <button id="startBtn">Start Game</button>
+                <button id="restartBtn">Restart</button>
+            </div>
+
+            <p class="instructions">
+                Use arrow keys or WASD to move. Eat the red apples and don't hit the wall or yourself.
+            </p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

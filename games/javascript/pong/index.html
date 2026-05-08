@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Pong game built with HTML, CSS, and JavaScript.">
+    <meta name="author" content="Nathan Cross">
+    <title>Pong Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="game-page">
+        <section class="game-card">
+
+            <div class="score-bar">
+                <div>
+                    <p>Your Score</p>
+                    <h2 id="playerScore">0</h2>
+                </div>
+
+                <h1>Pong</h1>
+
+                <div>
+                    <p>Computer</p>
+                    <h2 id="computerScore">0</h2>
+                </div>
+            </div>
+
+            <canvas id="game" width="750" height="400"></canvas>
+
+            <div id="resultBox" class="result-box">
+                <h2 id="resultTitle"></h2>
+                <p id="resultMessage"></p>
+            </div>
+
+            <div class="controls">
+                <button id="startBtn">Start Game</button>
+                <button id="restartBtn">Restart</button>
+            </div>
+
+            <p class="instructions">
+                Use W/S or Arrow Up/Down to move. First to 5 wins.
+            </p>
+
+            <a href="../index.html" class="back-link">
+                ← Back to JavaScript Games
+            </a>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

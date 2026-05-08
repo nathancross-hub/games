@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple mining game built with HTML, CSS, and JavaScript.">
+    <meta name="author" content="Nathan Cross">
+    <title>Mini Miner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="game-page">
+        <section class="game-card">
+
+            <div class="top-bar">
+                <div>
+                    <p class="label">JavaScript Game</p>
+                    <h1>Mini Miner</h1>
+                </div>
+
+                <div class="stats">
+                    <div>
+                        <p>Money</p>
+                        <h2 id="money">$0</h2>
+                    </div>
+
+                    <div>
+                        <p>Fuel</p>
+                        <h2 id="fuel">100 / 100</h2>
+                    </div>
+
+                    <div>
+                        <p>Cargo</p>
+                        <h2 id="cargo">0 / 50</h2>
+                    </div>
+
+                    <div>
+                        <p>Depth</p>
+                        <h2 id="depth">0</h2>
+                    </div>
+                </div>
+            </div>
+
+            <canvas id="game" width="720" height="480"></canvas>
+
+            <div id="messageBox" class="message-box">
+                <h2 id="messageTitle"></h2>
+                <p id="messageText"></p>
+            </div>
+
+            <div class="controls">
+                <button id="startBtn">Start Game</button>
+                <button id="upgradeBtn">Upgrade Tank: $150</button>
+                <button id="restartBtn">Restart</button>
+            </div>
+
+            <p class="instructions">
+                Mine ores, manage fuel, return to the surface to sell cargo and refuel.
+            </p>
+
+            <a href="../index.html" class="back-link">
+                ← Back to JavaScript Games
+            </a>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
