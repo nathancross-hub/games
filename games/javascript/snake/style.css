@@ -133,3 +133,21 @@ button:hover {
         flex-direction: column;
     }
 }
+
+.back-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #6cff9c;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #37b865;
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    background: #37b865;
+    color: white;
+    transform: translateY(-2px);
+}
