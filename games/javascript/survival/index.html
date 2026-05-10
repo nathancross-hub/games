@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A larger survival crafting game built with HTML, CSS, and JavaScript."
+    >
+
+    <meta
+        name="author"
+        content="Nathan Cross"
+    >
+
+    <title>Survival Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-page">
+
+        <section class="game-card">
+
+            <div class="top-bar">
+
+                <div>
+                    <p class="label">JavaScript Survival Game</p>
+                    <h1>Survival</h1>
+                </div>
+
+                <div class="stats">
+
+                    <div>
+                        <p>Health</p>
+                        <h2 id="health">100</h2>
+                    </div>
+
+                    <div>
+                        <p>Hunger</p>
+                        <h2 id="hunger">100</h2>
+                    </div>
+
+                    <div>
+                        <p>Day</p>
+                        <h2 id="day">1</h2>
+                    </div>
+
+                    <div>
+                        <p>Time</p>
+                        <h2 id="time">Day</h2>
+                    </div>
+
+                    <div>
+                        <p>Kills</p>
+                        <h2 id="kills">0</h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <canvas id="game" width="900" height="520"></canvas>
+
+            <div class="inventory">
+
+                <div>
+                    Wood:
+                    <span id="wood">0</span>
+                </div>
+
+                <div>
+                    Stone:
+                    <span id="stone">0</span>
+                </div>
+
+                <div>
+                    Food:
+                    <span id="food">0</span>
+                </div>
+
+                <div>
+                    Meat:
+                    <span id="meat">0</span>
+                </div>
+
+                <div>
+                    Sword:
+                    <span id="sword">No</span>
+                </div>
+
+                <div>
+                    Axe:
+                    <span id="axe">No</span>
+                </div>
+
+                <div>
+                    Selected:
+                    <span id="selectedItem">Wall</span>
+                </div>
+
+            </div>
+
+            <div id="messageBox" class="message-box">
+
+                <h2 id="messageTitle">Survive</h2>
+
+                <p id="messageText">
+                    Gather resources, craft tools, place blocks, hunt animals,
+                    fight enemies, and survive the night.
+                </p>
+
+            </div>
+
+            <div class="controls">
+
+                <button id="startBtn">
+                    Start
+                </button>
+
+                <button id="selectWallBtn">
+                    Select Wall
+                </button>
+
+                <button id="selectTorchBtn">
+                    Select Torch
+                </button>
+
+                <button id="placeBtn">
+                    Place Selected
+                </button>
+
+                <button id="moveTorchBtn">
+                    Pick Up Torch
+                </button>
+
+                <button id="swordBtn">
+                    Craft Sword: 6 Wood + 6 Stone
+                </button>
+
+                <button id="axeBtn">
+                    Craft Axe: 5 Wood + 3 Stone
+                </button>
+
+                <button id="restartBtn">
+                    Restart
+                </button>
+
+            </div>
+
+            <p class="instructions">
+                Move with WASD or arrow keys. E gathers. Space attacks.
+                F eats food or meat. Select Wall or Torch, then press Place Selected
+                to place it in front of your character.
+            </p>
+
+            <p class="instructions small">
+                Walls cost 5 wood. Torches cost 4 wood and 2 stone.
+                Torches can be picked up and moved. Animals drop meat.
+                Enemies drop resources when defeated.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
